@@ -3,42 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Разработчика</title>
+    <title>Дарья Афанасьева — Резюме</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #fff5f7;  /* Нежно-розовый фон */
+            background-image: linear-gradient(135deg, #fff5f7 0%, #ffe4e8 100%);
+            min-height: 100vh;
         }
+
         header {
             text-align: center;
-            padding: 10px 0;
-            background-color: #333;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #ffb6c1 0%, #ff99aa 100%); /* Нежный градиент */
             color: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(255, 153, 170, 0.3);
         }
+
         h1 {
             margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-top: 10px;
+        }
+
         section {
             background: white;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 153, 170, 0.15);
+            border: 1px solid #ffe4e8;
+            transition: transform 0.2s;
         }
+
+        section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 153, 170, 0.25);
+        }
+
         h2 {
-            color: #333;
+            color: #d46b7a;  /* Приглушенный розовый для заголовков */
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #ffd9e0;
+            padding-bottom: 10px;
         }
-        .contact-info {
-            margin-bottom: 20px;
+
+        .contact-info p {
+            margin: 10px 0;
+            color: #555;
         }
+
         .skills, .experience, .education {
             list-style-type: none;
             padding: 0;
         }
+
         .skills li, .experience li, .education li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            background-color: #fff9fa;
+            border-radius: 8px;
+            border-left: 3px solid #ffb6c1;
+        }
+
+        strong {
+            color: #b35f6b;
+        }
+
+        a {
+            color: #d46b7a;
+            text-decoration: none;
+            transition: color 0.2s;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #b35f6b;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #a65e68;
+            font-size: 0.9em;
+            background: white;
+            border-radius: 15px;
+            border: 1px solid #ffe4e8;
+        }
+
+        /* Стили для контактной информации */
+        .contact-info a {
+            word-break: break-all;
+        }
+
+        /* Адаптивность для мобильных */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            section {
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -46,46 +130,46 @@
 
 <header>
     <h1>Дарья Афанасьева</h1>
-    <p>Разработчик | Программист | Веб-дизайнер </p>
+    <p>Разработчик | Программист | Веб-дизайнер</p>
 </header>
 
 <section class="contact-info">
     <h2>Контактная информация</h2>
-    <p>Email: darislaval@yandex.ru</p>
-    <p>Телефон: +7 (917) 738 71 84</p>
-    <p>GitHub: <a href="https://github.com/testdarislaval.github.io/" target="_blank">github.com/ваш_пользователь</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/testdarislaval.github.io" target="_blank">linkedin.com/in/ваш_профиль</a></p>
+    <p>📧 Email: <a href="mailto:darislaval@yandex.ru">darislaval@yandex.ru</a></p>
+    <p>📱 Телефон: <a href="tel:+79177387184">+7 (917) 738 71 84</a></p>
+    <p>🐙 GitHub: <a href="https://github.com/testdarislaval" target="_blank">github.com/testdarislaval</a></p>
+    <!-- LinkedIn добавлен, но закомментирован. Раскомментируйте когда будет профиль -->
+    <!-- <p>🔗 LinkedIn: <a href="#" target="_blank">linkedin.com/in/дарья-афанасьева</a></p> -->
 </section>
 
 <section class="skills">
-    <h2>Навыки</h2>
-    <ul>
-        <li>HTML, JavaScript</li>
-        <li>Python, Django</li>
-        <li>SQL, MongoDB</li>
+    <h2>Мои навыки</h2>
+    <ul class="skills">
+        <li><strong>HTML, JavaScript</strong> — создание интерактивных веб-страниц</li>
+        <li><strong>Python, Django</strong> — разработка серверной части и веб-приложений</li>
+        <li><strong>SQL, MongoDB</strong> — работа с базами данных</li>
     </ul>
 </section>
 
 <section class="experience">
     <h2>Опыт работы</h2>
-    <ul>
-        <li><strong>Медицинский центр ДОКТОР А </strong> — IT-администратор (2022 - настоящее время)</li>
+    <ul class="experience">
+        <li><strong>Медицинский центр ДОКТОР А</strong> — IT-администратор (2022 - настоящее время)</li>
         <li><strong>SOUL CLINIC</strong> — Младший разработчик сайта (2023 - 2025)</li>
     </ul>
 </section>
 
 <section class="education">
     <h2>Образование</h2>
-    <ul> <!-- Это открывающий тег для первого списка -->
-        <li><strong>Уфимский государственный нефтяной технический университет </strong> — Бакалавр "Цифровые технологии и защита информации" (2020 - 2024)</li>
-    </ul> <!-- Закрывающий тег первого списка -->
-    <ul> <!-- Второй список (вместо <u2>) -->
-        <li><strong>Уфимский государственный нефтяной технический университет </strong> — Магистр "Управление архитектурой предприятия" (2024 - настоящее время)</li>
+    <ul class="education">
+        <li><strong>Уфимский государственный нефтяной технический университет</strong> — Бакалавр "Цифровые технологии и защита информации" (2020 - 2024)</li>
+        <li><strong>Уфимский государственный нефтяной технический университет</strong> — Магистр "Управление архитектурой предприятия" (2024 - настоящее время)</li>
     </ul>
 </section>
 
-<footer style="text-align:center; margin-top:20px;">
+<footer>
     <p>&copy; 2026 Дарья Афанасьева. Все права защищены.</p>
+    <p style="font-size: 0.8em; margin-top: 10px; color: #cc99a0;">Сделано с ❤️ в Уфе</p>
 </footer>
 
 </body>
